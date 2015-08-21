@@ -8,10 +8,10 @@ output: html_document
 This project contains summary data of each individual for each activity from the UCI HAR Dataset.The cleaned data set contains 40 observations from 30 subjects for different activities and measurements from 68 variables.
 
 ##Files included in the dataset
- dataset.txt - contains the data for the dataset
- Codebook.md - describes all of the variables
- run_analysis.R - contains the R script used to generated the dataset from the original data
- README.md - provides an overview of the dataset
+ <p>dataset.txt - contains the data for the dataset</p>
+ <p>Codebook.md - describes all of the variables</p>
+ <p>run_analysis.R - contains the R script used to generated the dataset from the original data</p>
+ <p>README.md - provides an overview of the dataset</p>
 
 ##Variables
 See CodeBook.md for a more in depth description
