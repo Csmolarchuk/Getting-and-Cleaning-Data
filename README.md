@@ -16,8 +16,8 @@ This project contains summary data of each individual for each activity from the
 ##Variables
 See CodeBook.md for a more in depth description
 
- Subject_ID
- Activity_ID
+ <p>Subject_ID</p>
+ <p>Activity_ID</p>
 
  timeBodyAccelerometer-mean()-X    
  timeBodyAccelerometer-mean()-Y            
@@ -34,11 +34,11 @@ See CodeBook.md for a more in depth description
  timeBodyGyroscopeJerk-mean()-X   
  timeBodyGyroscopeJerk-mean()-Y         
  timeBodyGyroscopeJerk-mean()-Z 
- timeBodyAccelerometerMagnitude-mean()    
- timeGravityAccelerometerMagnitude-mean()
- timeBodyAccelerometerJerkMagnitude-mean()     
- timeBodyGyroscopeMagnitude-mean()       
- timeBodyGyroscopeJerkMagnitude-mean()  
+ timeBodyAccelerometerMagnitude-mean    
+ timeGravityAccelerometerMagnitude-mean
+ timeBodyAccelerometerJerkMagnitude-mean     
+ timeBodyGyroscopeMagnitude-mean     
+ timeBodyGyroscopeJerkMagnitude-mean  
  frequencyBodyAccelerometer-mean()-X 
  frequencyBodyAccelerometer-mean()-Y 
  frequencyBodyAccelerometer-mean()-Z    
@@ -67,11 +67,11 @@ See CodeBook.md for a more in depth description
  timeBodyGyroscopeJerk-std()-X 
  timeBodyGyroscopeJerk-std()-Y
  timeBodyGyroscopeJerk-std()-Z
- timeBodyAccelerometerMagnitude-std()
- timeGravityAccelerometerMagnitude-std()
- timeBodyAccelerometerJerkMagnitude-std()
- timeBodyGyroscopeMagnitude-std()
- timeBodyGyroscopeJerkMagnitude-std()
+ timeBodyAccelerometerMagnitude-std
+ timeGravityAccelerometerMagnitude-std
+ timeBodyAccelerometerJerkMagnitude-std
+ timeBodyGyroscopeMagnitude-std
+ timeBodyGyroscopeJerkMagnitude-std
  frequencyBodyAccelerometer-std()-X
  frequencyBodyAccelerometer-std()-Y
  frequencyBodyAccelerometer-std()-Z
