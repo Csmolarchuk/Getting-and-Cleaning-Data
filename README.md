@@ -19,13 +19,13 @@ See CodeBook.md for a more in depth description
  <p>Subject_ID</p>
  <p>Activity_ID</p>
 
- timeBodyAccelerometer-mean()-X    
- timeBodyAccelerometer-mean()-Y            
- timeBodyAccelerometer-mean()-Z      
- timeGravityAccelerometer-mean()-X    
- timeGravityAccelerometer-mean()-Y     
- timeGravityAccelerometer-mean()-Z     
- timeBodyAccelerometerJerk-mean()-X         
+ *timeBodyAccelerometer-mean()-X    
+ *timeBodyAccelerometer-mean()-Y            
+ *timeBodyAccelerometer-mean()-Z      
+ *timeGravityAccelerometer-mean()-X    
+ *timeGravityAccelerometer-mean()-Y     
+ *timeGravityAccelerometer-mean()-Z     
+ *timeBodyAccelerometerJerk-mean()-X         
  timeBodyAccelerometerJerk-mean()-Y    
  timeBodyAccelerometerJerk-mean()-Z   
  timeBodyGyroscope-mean()-X
