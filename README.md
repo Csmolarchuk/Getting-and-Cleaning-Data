@@ -10,7 +10,7 @@ This project contains summary data of each individual for each activity from the
 ##Files included in the dataset
 dataset.txt - contains the data for the dataset
 Codebook.md - describes all of the variables
-run_analysis.R - containes the R script used to generated the dataset from the original data
+run_analysis.R - contains the R script used to generated the dataset from the original data
 ReadMe.md - provides an overview of the dataset
 
 ##Variables
