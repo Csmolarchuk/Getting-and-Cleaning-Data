@@ -18,7 +18,6 @@ See CodeBook.md for a more in depth description
 
  * Subject_ID
  * Activity_ID
-
  * timeBodyAccelerometer-mean()-X    
  * timeBodyAccelerometer-mean()-Y            
  * timeBodyAccelerometer-mean()-Z      
