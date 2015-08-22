@@ -43,7 +43,7 @@ General description of the file including:
 
 (you can easily use Rcode for this, just load the dataset and provide the information directly form the tidy data file)
 
-###Variable 1 (repeat this section for all variables in the dataset)
+###Variables
 Short description of what the variable describes.
 
 Some information on the variable including:
@@ -54,75 +54,86 @@ Some information on the variable including:
 
 (you can easily use Rcode for this, just load the dataset and provide the information directly form the tidy data file)
 
- Subject_ID
- Activity_ID
+ * Subject_ID - ID of each subject in the study
+ * Activity_ID - Activity Type
+    1. Walking
+    2. Walking Upstairs
+    3. Walking Downstairs
+    4. Sitting
+    5. Standing
+    6. Laying
 
- timeBodyAccelerometer-mean()-X    
- timeBodyAccelerometer-mean()-Y            
- timeBodyAccelerometer-mean()-Z      
- timeGravityAccelerometer-mean()-X    
- timeGravityAccelerometer-mean()-Y     
- timeGravityAccelerometer-mean()-Z     
- timeBodyAccelerometerJerk-mean()-X         
- timeBodyAccelerometerJerk-mean()-Y    
- timeBodyAccelerometerJerk-mean()-Z   
- timeBodyGyroscope-mean()-X
- timeBodyGyroscope-mean()-Y             
- timeBodyGyroscope-mean()-Z      
- timeBodyGyroscopeJerk-mean()-X   
- timeBodyGyroscopeJerk-mean()-Y         
- timeBodyGyroscopeJerk-mean()-Z 
- timeBodyAccelerometerMagnitude-mean()    
- timeGravityAccelerometerMagnitude-mean()
- timeBodyAccelerometerJerkMagnitude-mean()     
- timeBodyGyroscopeMagnitude-mean()       
- timeBodyGyroscopeJerkMagnitude-mean()  
- frequencyBodyAccelerometer-mean()-X 
- frequencyBodyAccelerometer-mean()-Y 
- frequencyBodyAccelerometer-mean()-Z    
- frequencyBodyAccelerometerJerk-mean()-X 
- frequencyBodyAccelerometerJerk-mean()-Y 
- frequencyBodyAccelerometerJerk-mean()-Z 
- frequencyBodyGyroscope-mean()-X 
- frequencyBodyGyroscope-mean()-Y 
- frequencyBodyGyroscope-mean()-Z  
- frequencyBodyAccelerometerMagnitude-mean
- frequencyBodyAccelerometerJerkMagnitude-mean
- frequencyBodyGyroscopeMagnitude-mean
- frequencyBodyGyroscopeJerkMagnitude-mean
- timeBodyAccelerometer-std()-X  
- timeBodyAccelerometer-std()-Y 
- timeBodyAccelerometer-std()-Z 
- timeGravityAccelerometer-std()-X   
- timeGravityAccelerometer-std()-Y
- timeGravityAccelerometer-std()-Z   
- timeBodyAccelerometerJerk-std()-X
- timeBodyAccelerometerJerk-std()-Y
- timeBodyAccelerometerJerk-std()-Z
- timeBodyGyroscope-std()-X
- timeBodyGyroscope-std()-Y      
- timeBodyGyroscope-std()-Z   
- timeBodyGyroscopeJerk-std()-X 
- timeBodyGyroscopeJerk-std()-Y
- timeBodyGyroscopeJerk-std()-Z
- timeBodyAccelerometerMagnitude-std()
- timeGravityAccelerometerMagnitude-std()
- timeBodyAccelerometerJerkMagnitude-std()
- timeBodyGyroscopeMagnitude-std()
- timeBodyGyroscopeJerkMagnitude-std()
- frequencyBodyAccelerometer-std()-X
- frequencyBodyAccelerometer-std()-Y
- frequencyBodyAccelerometer-std()-Z
- frequencyBodyAccelerometerJerk-std()-X
- frequencyBodyAccelerometerJerk-std()-Y
- frequencyBodyAccelerometerJerk-std()-Z
- frequencyBodyGyroscope-std()-X
- frequencyBodyGyroscope-std()-Y
- frequencyBodyGyroscope-std()-Z
- frequencyBodyAccelerometerMagnitude-std
- frequencyBodyAccelerometerJerkMagnitude-std
- frequencyBodyGyroscopeMagnitude-std        
- frequencyBodyGyroscopeJerkMagnitude-std  
+These measurements are the means of the means for the following type of measurement: 
+- Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
+- Triaxial Angular velocity from the gyroscope. 
+- A 561-feature vector with time and frequency domain variables
+
+ * timeBodyAccelerometer-mean()-X    
+ * timeBodyAccelerometer-mean()-Y            
+ * timeBodyAccelerometer-mean()-Z      
+ * timeGravityAccelerometer-mean()-X    
+ * timeGravityAccelerometer-mean()-Y     
+ * timeGravityAccelerometer-mean()-Z     
+ * timeBodyAccelerometerJerk-mean()-X         
+ * timeBodyAccelerometerJerk-mean()-Y    
+ * timeBodyAccelerometerJerk-mean()-Z   
+ * timeBodyGyroscope-mean()-X
+ * timeBodyGyroscope-mean()-Y             
+ * timeBodyGyroscope-mean()-Z      
+ * timeBodyGyroscopeJerk-mean()-X   
+ * timeBodyGyroscopeJerk-mean()-Y         
+ * timeBodyGyroscopeJerk-mean()-Z 
+ * timeBodyAccelerometerMagnitude-mean()    
+ * timeGravityAccelerometerMagnitude-mean()
+ * timeBodyAccelerometerJerkMagnitude-mean()     
+ * timeBodyGyroscopeMagnitude-mean()       
+ * timeBodyGyroscopeJerkMagnitude-mean()  
+ * frequencyBodyAccelerometer-mean()-X 
+ * frequencyBodyAccelerometer-mean()-Y 
+ * frequencyBodyAccelerometer-mean()-Z    
+ * frequencyBodyAccelerometerJerk-mean()-X 
+ * frequencyBodyAccelerometerJerk-mean()-Y 
+ * frequencyBodyAccelerometerJerk-mean()-Z 
+ * frequencyBodyGyroscope-mean()-X 
+ * frequencyBodyGyroscope-mean()-Y 
+ * frequencyBodyGyroscope-mean()-Z  
+ * frequencyBodyAccelerometerMagnitude-mean
+ * frequencyBodyAccelerometerJerkMagnitude-mean
+ * frequencyBodyGyroscopeMagnitude-mean
+ * frequencyBodyGyroscopeJerkMagnitude-mean
+ * timeBodyAccelerometer-std()-X  
+ * timeBodyAccelerometer-std()-Y 
+ * timeBodyAccelerometer-std()-Z 
+ * timeGravityAccelerometer-std()-X   
+ * timeGravityAccelerometer-std()-Y
+ * timeGravityAccelerometer-std()-Z   
+ * timeBodyAccelerometerJerk-std()-X
+ * timeBodyAccelerometerJerk-std()-Y
+ * timeBodyAccelerometerJerk-std()-Z
+ * timeBodyGyroscope-std()-X
+ * timeBodyGyroscope-std()-Y      
+ * timeBodyGyroscope-std()-Z   
+ * timeBodyGyroscopeJerk-std()-X 
+ * timeBodyGyroscopeJerk-std()-Y
+ * timeBodyGyroscopeJerk-std()-Z
+ * timeBodyAccelerometerMagnitude-std()
+ * timeGravityAccelerometerMagnitude-std()
+ * timeBodyAccelerometerJerkMagnitude-std()
+ * timeBodyGyroscopeMagnitude-std()
+ * timeBodyGyroscopeJerkMagnitude-std()
+ * frequencyBodyAccelerometer-std()-X
+ * frequencyBodyAccelerometer-std()-Y
+ * frequencyBodyAccelerometer-std()-Z
+ * frequencyBodyAccelerometerJerk-std()-X
+ * frequencyBodyAccelerometerJerk-std()-Y
+ * frequencyBodyAccelerometerJerk-std()-Z
+ * frequencyBodyGyroscope-std()-X
+ * frequencyBodyGyroscope-std()-Y
+ * frequencyBodyGyroscope-std()-Z
+ * frequencyBodyAccelerometerMagnitude-std
+ * frequencyBodyAccelerometerJerkMagnitude-std
+ * frequencyBodyGyroscopeMagnitude-std        
+ * frequencyBodyGyroscopeJerkMagnitude-std  
 
 
 
