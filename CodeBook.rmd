@@ -27,23 +27,23 @@ The dataset was downloaded from https://d396qusza40orc.cloudfront.net/getdata%2F
 5. Create a new variable containing the mean of each variable by activity type and subject ID
 
 ###Cleaning of the data
-Short, high-level description of what the cleaning script does. [link to the readme document that describes the code in greater detail]
+1. Data were downloaded, unzipped and read into R studio from the UCI HAR Dataset (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip). 
+2. Data were merged using using the dplyr package so that the data set contained a complete list of observations from the 30 subjects. 
+3. Variables that did not include a label were then labelled. 
+4. Data were then arranged in order based on subject ID and any duplicate columns in the data were removed. 
+5. Measurement variables that contained a mean or standard deviation were selected and all other variables were dropped from the data using. 
+6. Variables were renamed so that any short hand text was replaced with the complete word. 
+7. Using the dplyr package the data were aggregated and measurment means were determined for each activity type of each individual. 
+8. the complete data set was then saved as a text file. 
 
 ##Files included in the dataset
-dataset.txt - contains the data for the dataset
-Codebook.md - describes all of the variables
-run_analysis.R - containes the R script used to generated the dataset from the original data
-ReadMe.md - provides an overview of the dataset
+* dataset.txt - contains the data for the dataset
+* Codebook.rmd - describes all of the variables
+* run_analysis.R - containes the R script used to generated the dataset from the original data
+* README.md - provides an overview of the dataset
 
 ##Description of the variables in the dataset.txt file
-General description of the file including:
- - Dimensions of the dataset
- - Summary of the data
- - Variables present in the dataset
 
-(you can easily use Rcode for this, just load the dataset and provide the information directly form the tidy data file)
-
-###Variables
  * Subject_ID - ID of each subject in the study
  * Activity_ID - Activity Type
     1. Walking
