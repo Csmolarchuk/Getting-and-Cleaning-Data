@@ -27,102 +27,102 @@ The dataset was downloaded from https://d396qusza40orc.cloudfront.net/getdata%2F
 5. Create a new variable containing the mean of each variable by activity type and subject ID
 
 ###Cleaning of the data
-Short, high-level description of what the cleaning script does. [link to the readme document that describes the code in greater detail]
+1. Data were downloaded, unzipped and read into R studio from the UCI HAR Dataset (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip). 
+2. Data were merged using using the dplyr package so that the data set contained a complete list of observations from the 30 subjects. 
+3. Variables that did not include a label were then labelled. 
+4. Data were then arranged in order based on subject ID and any duplicate columns in the data were removed. 
+5. Measurement variables that contained a mean or standard deviation were selected and all other variables were dropped from the data using. 
+6. Variables were renamed so that any short hand text was replaced with the complete word. 
+7. Using the dplyr package the data were aggregated and measurment means were determined for each activity type of each individual. 
+8. the complete data set was then saved as a text file. 
 
 ##Files included in the dataset
-dataset.txt - contains the data for the dataset
-Codebook.md - describes all of the variables
-run_analysis.R - containes the R script used to generated the dataset from the original data
-ReadMe.md - provides an overview of the dataset
+* dataset.txt - contains the data for the dataset
+* Codebook.rmd - describes all of the variables
+* run_analysis.R - containes the R script used to generated the dataset from the original data
+* README.md - provides an overview of the dataset
 
 ##Description of the variables in the dataset.txt file
-General description of the file including:
- - Dimensions of the dataset
- - Summary of the data
- - Variables present in the dataset
 
-(you can easily use Rcode for this, just load the dataset and provide the information directly form the tidy data file)
+ * Subject_ID - ID of each subject in the study
+ * Activity_ID - Activity Type
+    1. Walking
+    2. Walking Upstairs
+    3. Walking Downstairs
+    4. Sitting
+    5. Standing
+    6. Laying
 
-###Variable 1 (repeat this section for all variables in the dataset)
-Short description of what the variable describes.
-
-Some information on the variable including:
- - Class of the variable
- - Unique values/levels of the variable
- - Unit of measurement (if no unit of measurement list this as well)
- - In case names follow some schema, describe how entries were constructed (for example time-body-gyroscope-z has 4 levels of descriptors. Describe these 4 levels). 
-
-(you can easily use Rcode for this, just load the dataset and provide the information directly form the tidy data file)
-
- Subject_ID
- Activity_ID
-
- timeBodyAccelerometer-mean()-X    
- timeBodyAccelerometer-mean()-Y            
- timeBodyAccelerometer-mean()-Z      
- timeGravityAccelerometer-mean()-X    
- timeGravityAccelerometer-mean()-Y     
- timeGravityAccelerometer-mean()-Z     
- timeBodyAccelerometerJerk-mean()-X         
- timeBodyAccelerometerJerk-mean()-Y    
- timeBodyAccelerometerJerk-mean()-Z   
- timeBodyGyroscope-mean()-X
- timeBodyGyroscope-mean()-Y             
- timeBodyGyroscope-mean()-Z      
- timeBodyGyroscopeJerk-mean()-X   
- timeBodyGyroscopeJerk-mean()-Y         
- timeBodyGyroscopeJerk-mean()-Z 
- timeBodyAccelerometerMagnitude-mean()    
- timeGravityAccelerometerMagnitude-mean()
- timeBodyAccelerometerJerkMagnitude-mean()     
- timeBodyGyroscopeMagnitude-mean()       
- timeBodyGyroscopeJerkMagnitude-mean()  
- frequencyBodyAccelerometer-mean()-X 
- frequencyBodyAccelerometer-mean()-Y 
- frequencyBodyAccelerometer-mean()-Z    
- frequencyBodyAccelerometerJerk-mean()-X 
- frequencyBodyAccelerometerJerk-mean()-Y 
- frequencyBodyAccelerometerJerk-mean()-Z 
- frequencyBodyGyroscope-mean()-X 
- frequencyBodyGyroscope-mean()-Y 
- frequencyBodyGyroscope-mean()-Z  
- frequencyBodyAccelerometerMagnitude-mean
- frequencyBodyAccelerometerJerkMagnitude-mean
- frequencyBodyGyroscopeMagnitude-mean
- frequencyBodyGyroscopeJerkMagnitude-mean
- timeBodyAccelerometer-std()-X  
- timeBodyAccelerometer-std()-Y 
- timeBodyAccelerometer-std()-Z 
- timeGravityAccelerometer-std()-X   
- timeGravityAccelerometer-std()-Y
- timeGravityAccelerometer-std()-Z   
- timeBodyAccelerometerJerk-std()-X
- timeBodyAccelerometerJerk-std()-Y
- timeBodyAccelerometerJerk-std()-Z
- timeBodyGyroscope-std()-X
- timeBodyGyroscope-std()-Y      
- timeBodyGyroscope-std()-Z   
- timeBodyGyroscopeJerk-std()-X 
- timeBodyGyroscopeJerk-std()-Y
- timeBodyGyroscopeJerk-std()-Z
- timeBodyAccelerometerMagnitude-std()
- timeGravityAccelerometerMagnitude-std()
- timeBodyAccelerometerJerkMagnitude-std()
- timeBodyGyroscopeMagnitude-std()
- timeBodyGyroscopeJerkMagnitude-std()
- frequencyBodyAccelerometer-std()-X
- frequencyBodyAccelerometer-std()-Y
- frequencyBodyAccelerometer-std()-Z
- frequencyBodyAccelerometerJerk-std()-X
- frequencyBodyAccelerometerJerk-std()-Y
- frequencyBodyAccelerometerJerk-std()-Z
- frequencyBodyGyroscope-std()-X
- frequencyBodyGyroscope-std()-Y
- frequencyBodyGyroscope-std()-Z
- frequencyBodyAccelerometerMagnitude-std
- frequencyBodyAccelerometerJerkMagnitude-std
- frequencyBodyGyroscopeMagnitude-std        
- frequencyBodyGyroscopeJerkMagnitude-std  
+These measurements are the means of the means for the following type of measurement: 
+- Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
+- Triaxial Angular velocity from the gyroscope. 
+- A 561-feature vector with time and frequency domain variables
+ * timeBodyAccelerometer-mean()-X    
+ * timeBodyAccelerometer-mean()-Y            
+ * timeBodyAccelerometer-mean()-Z      
+ * timeGravityAccelerometer-mean()-X    
+ * timeGravityAccelerometer-mean()-Y     
+ * timeGravityAccelerometer-mean()-Z     
+ * timeBodyAccelerometerJerk-mean()-X         
+ * timeBodyAccelerometerJerk-mean()-Y    
+ * timeBodyAccelerometerJerk-mean()-Z   
+ * timeBodyGyroscope-mean()-X
+ * timeBodyGyroscope-mean()-Y             
+ * timeBodyGyroscope-mean()-Z      
+ * timeBodyGyroscopeJerk-mean()-X   
+ * timeBodyGyroscopeJerk-mean()-Y         
+ * timeBodyGyroscopeJerk-mean()-Z 
+ * timeBodyAccelerometerMagnitude-mean()    
+ * timeGravityAccelerometerMagnitude-mean()
+ * timeBodyAccelerometerJerkMagnitude-mean()     
+ * timeBodyGyroscopeMagnitude-mean()       
+ * timeBodyGyroscopeJerkMagnitude-mean()  
+ * frequencyBodyAccelerometer-mean()-X 
+ * frequencyBodyAccelerometer-mean()-Y 
+ * frequencyBodyAccelerometer-mean()-Z    
+ * frequencyBodyAccelerometerJerk-mean()-X 
+ * frequencyBodyAccelerometerJerk-mean()-Y 
+ * frequencyBodyAccelerometerJerk-mean()-Z 
+ * frequencyBodyGyroscope-mean()-X 
+ * frequencyBodyGyroscope-mean()-Y 
+ * frequencyBodyGyroscope-mean()-Z  
+ * frequencyBodyAccelerometerMagnitude-mean
+ * frequencyBodyAccelerometerJerkMagnitude-mean
+ * frequencyBodyGyroscopeMagnitude-mean
+ * frequencyBodyGyroscopeJerkMagnitude-mean
+ * timeBodyAccelerometer-std()-X  
+ * timeBodyAccelerometer-std()-Y 
+ * timeBodyAccelerometer-std()-Z 
+ * timeGravityAccelerometer-std()-X   
+ * timeGravityAccelerometer-std()-Y
+ * timeGravityAccelerometer-std()-Z   
+ * timeBodyAccelerometerJerk-std()-X
+ * timeBodyAccelerometerJerk-std()-Y
+ * timeBodyAccelerometerJerk-std()-Z
+ * timeBodyGyroscope-std()-X
+ * timeBodyGyroscope-std()-Y      
+ * timeBodyGyroscope-std()-Z   
+ * timeBodyGyroscopeJerk-std()-X 
+ * timeBodyGyroscopeJerk-std()-Y
+ * timeBodyGyroscopeJerk-std()-Z
+ * timeBodyAccelerometerMagnitude-std()
+ * timeGravityAccelerometerMagnitude-std()
+ * timeBodyAccelerometerJerkMagnitude-std()
+ * timeBodyGyroscopeMagnitude-std()
+ * timeBodyGyroscopeJerkMagnitude-std()
+ * frequencyBodyAccelerometer-std()-X
+ * frequencyBodyAccelerometer-std()-Y
+ * frequencyBodyAccelerometer-std()-Z
+ * frequencyBodyAccelerometerJerk-std()-X
+ * frequencyBodyAccelerometerJerk-std()-Y
+ * frequencyBodyAccelerometerJerk-std()-Z
+ * frequencyBodyGyroscope-std()-X
+ * frequencyBodyGyroscope-std()-Y
+ * frequencyBodyGyroscope-std()-Z
+ * frequencyBodyAccelerometerMagnitude-std
+ * frequencyBodyAccelerometerJerkMagnitude-std
+ * frequencyBodyGyroscopeMagnitude-std        
+ * frequencyBodyGyroscopeJerkMagnitude-std  
 
 
 
